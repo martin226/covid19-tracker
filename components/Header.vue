@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div>
         <header class="text-white bg-purple-800 text-center p-4 mb-1">
             <div class="font-bold text-3xl md:text-5xl">
                 <font-awesome-icon :icon="['fas', 'shield-virus']" /> Covid-19
