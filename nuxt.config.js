@@ -25,6 +25,7 @@ export default {
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
         { src: '~/plugins/vue-good-table', ssr: false },
+        '~/plugins/vue-offline',
         '~/plugins/helpers'
     ],
 
@@ -65,5 +66,8 @@ export default {
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {}
+    build: {},
+    server: {
+        host: '0.0.0.0'
+    }
 };

@@ -13,7 +13,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
-    "vue-good-table": "^2.21.10"
+    "vue-good-table": "^2.21.10",
+    "vue-offline": "^2.0.8"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
