@@ -1,30 +1,32 @@
 {
-  "name": "covid-tracker",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.1",
-    "@nuxtjs/pwa": "^3.3.5",
-    "core-js": "^3.9.1",
-    "nuxt": "^2.15.3",
-    "vue-good-table": "^2.21.10",
-    "vue-offline": "^2.0.8"
-  },
-  "devDependencies": {
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@nuxt/types": "^2.15.3",
-    "@nuxt/typescript-build": "^2.1.0",
-    "@nuxtjs/fontawesome": "^1.1.2",
-    "@nuxtjs/tailwindcss": "^4.0.3",
-    "autoprefixer": "^9",
-    "postcss": "^7",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat"
-  }
+    "name": "covid-tracker",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    },
+    "dependencies": {
+        "@nuxtjs/axios": "^5.13.1",
+        "@nuxtjs/pwa": "^3.3.5",
+        "core-js": "^3.9.1",
+        "nuxt": "^2.15.3",
+        "vue-good-table": "^2.21.10",
+        "vue-offline": "^2.0.8"
+    },
+    "devDependencies": {
+        "@fortawesome/free-brands-svg-icons": "^5.15.3",
+        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@nuxt/types": "^2.15.3",
+        "@nuxt/typescript-build": "^2.1.0",
+        "@nuxtjs/fontawesome": "^1.1.2",
+        "@nuxtjs/tailwindcss": "^4.0.3",
+        "autoprefixer": "^9",
+        "postcss": "^7",
+        "push-dir": "^0.4.1",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+    }
 }
