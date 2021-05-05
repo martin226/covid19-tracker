@@ -1,7 +1,15 @@
 <template>
     <div class="text-center flex flex-col h-screen">
         <Header />
-        <main v-if="!loading"></main>
+        <main v-if="!loading">
+            <p class="mt-3 italic">
+                Data automatically updates every 5 minutes.
+            </p>
+            <h2 class="text-3xl m-5 font-bold">Daily Global Report</h2>
+            <StatsReport :stats="stats" :daily="true" />
+            <h2 class="text-3xl m-5 font-bold">All-Time Global Report</h2>
+            <StatsReport :stats="stats" :daily="false" />
+        </main>
         <main class="flex justify-center items-center flex-grow" v-else>
             <LoadingCircle />
         </main>
