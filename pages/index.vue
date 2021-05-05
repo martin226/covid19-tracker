@@ -31,27 +31,21 @@ export default Vue.extend({
     data() {
         return {
             loading: true,
-            currentCountry: 'Global',
             date: '',
             stats: {},
             countries: [] as Country[]
         };
     },
-    methods: {
-        async fetchSummary() {
-            this.loading = true;
-            const data = await client.summary();
-            this.date = data.Date;
-            this.stats = data.Global;
-            this.countries = data.Countries;
-            this.loading = false;
-        }
+    async fetch() {
+        this.loading = true;
+        const data = await client.summary();
+        this.date = data.Date;
+        this.stats = data.Global;
+        this.countries = data.Countries;
+        this.loading = false;
     },
     async created() {
-        await this.fetchSummary();
-        setInterval(async () => {
-            await this.fetchSummary();
-        }, 300000);
+        setInterval(this.$fetch, 300000);
     }
 });
 </script>
