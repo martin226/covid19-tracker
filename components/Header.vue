@@ -14,7 +14,7 @@
                 >
             </p>
         </div>
-        <div>
+        <div class="pr-4">
             <NuxtLink
                 to="/countries"
                 class="text-lg no-underline text-white hover:text-purple-300 ml-2"
