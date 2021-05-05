@@ -9,6 +9,10 @@
             <StatsReport :stats="stats" :daily="true" />
             <h2 class="text-3xl m-5 font-bold">All-Time Global Report</h2>
             <StatsReport :stats="stats" :daily="false" />
+            <h2 class="text-3xl m-5 font-bold">
+                Individual Country Statistics
+            </h2>
+            <CountryTable :countries="countries" />
         </main>
         <main class="flex justify-center items-center flex-grow" v-else>
             <LoadingCircle />
