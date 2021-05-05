@@ -9,8 +9,7 @@
         }"
         :pagination-options="{
             enabled: true,
-            mode: 'pages',
-            perPage: 5
+            mode: 'pages'
         }"
     />
 </template>
