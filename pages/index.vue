@@ -1,5 +1,5 @@
 <template>
-    <main class="h-full" v-if="!loading">
+    <main class="my-auto" v-if="!loading">
         <p class="mt-3 italic">
             Data automatically updates every 5 minutes.
         </p>
