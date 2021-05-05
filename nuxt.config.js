@@ -61,7 +61,12 @@ export default {
     // PWA module configuration: https://go.nuxtjs.dev/pwa
     pwa: {
         manifest: {
-            lang: 'en'
+            name: 'COVID-19 Tracker',
+            short_name: 'COVID',
+            lang: 'en',
+            description:
+                'Statistics tracker for the novel coronavirus (2019-nCoV)',
+            theme_color: '#5B21B6'
         }
     },
 
