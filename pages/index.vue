@@ -13,6 +13,7 @@
         <main class="flex justify-center items-center flex-grow" v-else>
             <LoadingCircle />
         </main>
+        <Footer />
     </div>
 </template>
 
