@@ -8,8 +8,12 @@
                     :icon="['fas', 'signal']"
                 ></font-awesome-icon>
             </h2>
-            <p v-if="daily" class="text-xl">{{ format(stats.NewConfirmed) }}</p>
-            <p v-else class="text-xl">{{ format(stats.TotalConfirmed) }}</p>
+            <p v-if="daily" class="text-xl">
+                {{ formatNumber(stats.NewConfirmed) }}
+            </p>
+            <p v-else class="text-xl">
+                {{ formatNumber(stats.TotalConfirmed) }}
+            </p>
         </div>
         <div class="py-10 px-4 bg-white shadow-lg rounded-lg">
             <h2 class="text-3xl mb-3">
@@ -19,8 +23,12 @@
                     :icon="['fas', 'heartbeat']"
                 ></font-awesome-icon>
             </h2>
-            <p v-if="daily" class="text-xl">{{ format(stats.NewRecovered) }}</p>
-            <p v-else class="text-xl">{{ format(stats.TotalRecovered) }}</p>
+            <p v-if="daily" class="text-xl">
+                {{ formatNumber(stats.NewRecovered) }}
+            </p>
+            <p v-else class="text-xl">
+                {{ formatNumber(stats.TotalRecovered) }}
+            </p>
         </div>
         <div class="py-10 px-4 bg-white shadow-lg rounded-lg">
             <h2 class="text-3xl mb-3">
@@ -30,8 +38,10 @@
                     :icon="['fas', 'skull']"
                 ></font-awesome-icon>
             </h2>
-            <p v-if="daily" class="text-xl">{{ format(stats.NewDeaths) }}</p>
-            <p v-else class="text-xl">{{ format(stats.TotalDeaths) }}</p>
+            <p v-if="daily" class="text-xl">
+                {{ formatNumber(stats.NewDeaths) }}
+            </p>
+            <p v-else class="text-xl">{{ formatNumber(stats.TotalDeaths) }}</p>
         </div>
     </div>
 </template>
@@ -39,11 +49,6 @@
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
-    props: ['stats', 'daily'],
-    methods: {
-        format: function(x: number): string {
-            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        }
-    }
+    props: ['stats', 'daily']
 });
 </script>

@@ -3,6 +3,7 @@
         <p class="mt-3 italic">
             Data automatically updates every 5 minutes.
         </p>
+        <p class="mt-3">Last Updated: {{ formatDate(date) }}</p>
         <h2 class="text-3xl m-5 font-bold">
             Individual Country Statistics
         </h2>
