@@ -27,32 +27,38 @@ export default Vue.extend({
                 {
                     label: 'Daily Cases',
                     field: 'NewConfirmed',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 },
                 {
                     label: 'Total Cases',
                     field: 'TotalConfirmed',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 },
                 {
                     label: 'Daily Recoveries',
                     field: 'NewRecovered',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 },
                 {
                     label: 'Total Recoveries',
                     field: 'TotalRecovered',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 },
                 {
                     label: 'Daily Deaths',
                     field: 'NewDeaths',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 },
                 {
                     label: 'Total Deaths',
                     field: 'TotalDeaths',
-                    type: 'number'
+                    type: 'number',
+                    formatFn: this.formatNumber
                 }
             ]
         };
