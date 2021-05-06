@@ -14,11 +14,13 @@
                 >
             </p>
         </div>
+        <hr class="my-3 visible sm:invisible" />
         <div class="pr-4">
             <NuxtLink
                 to="/countries"
                 class="text-lg no-underline text-white hover:text-purple-300 ml-2"
-                >Countries</NuxtLink
+                ><font-awesome-icon :icon="['fas', 'compass']" />
+                Countries</NuxtLink
             >
         </div>
     </nav>
