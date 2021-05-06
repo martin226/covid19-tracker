@@ -49,6 +49,13 @@
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
-    props: ['stats', 'daily']
+    props: {
+        stats: {
+            type: Object
+        },
+        daily: {
+            type: Boolean
+        }
+    }
 });
 </script>

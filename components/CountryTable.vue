@@ -16,7 +16,11 @@
 <script lang="ts">
 import Vue from 'vue';
 export default Vue.extend({
-    props: ['countries'],
+    props: {
+        countries: {
+            type: Array
+        }
+    },
     data() {
         return {
             columns: [
