@@ -25,7 +25,7 @@
         "@nuxtjs/fontawesome": "^1.1.2",
         "@nuxtjs/tailwindcss": "^4.1.0",
         "autoprefixer": "^9",
-        "postcss": "^7",
+        "postcss": "^8",
         "push-dir": "^0.4.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat"
     }
