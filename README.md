@@ -1,4 +1,12 @@
-# covid-tracker
+# COVID-19 Tracker
+
+COVID-19 tracker PWA built using NuxtJS and Tailwind.
+
+![COVID-19 Tracker Screenshot](https://i.imgur.com/Um41VRw.png)
+
+## Live Demo
+
+<https://martin-sit.github.io/covid19-tracker/>
 
 ## Build Setup
 
@@ -15,6 +23,16 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+
+# generate static project and deploy to gh pages
+$ yarn generate:deployment
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Credits
+
+[Font Awesome](https://fontawesome.com/license): Website icons and logo (modified with recolor)
+
+## License
+
+[MIT](http://opensource.org/licenses/MIT)
+Copyright (c) 2021 Martin Sit
