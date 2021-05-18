@@ -11,7 +11,7 @@
         "generate:deployment": "yarn generate && rm dist/README.md && yarn deploy"
     },
     "dependencies": {
-        "@nuxtjs/axios": "^5.13.1",
+        "@nuxtjs/axios": "^5.13.3",
         "@nuxtjs/pwa": "^3.3.5",
         "core-js": "^3.11.3",
         "nuxt": "^2.15.3",
