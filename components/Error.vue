@@ -9,12 +9,13 @@
 </template>
 <script lang="ts">
 import Vue from 'vue';
+
 export default Vue.extend({
     props: {
         error: {
             type: String,
-            default: 'An unknown error occurred.'
-        }
-    }
+            default: 'An unknown error occurred.',
+        },
+    },
 });
 </script>

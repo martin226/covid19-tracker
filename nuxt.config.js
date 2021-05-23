@@ -6,7 +6,7 @@ export default {
     target: 'static',
 
     router: {
-        base: '/covid19-tracker/'
+        base: '/covid19-tracker/',
     },
 
     // Global page headers: https://go.nuxtjs.dev/config-head
@@ -16,16 +16,16 @@ export default {
             { charset: 'utf-8' },
             {
                 name: 'viewport',
-                content: 'width=device-width, initial-scale=1'
+                content: 'width=device-width, initial-scale=1',
             },
             {
                 hid: 'description',
                 name: 'description',
                 content:
-                    'Real-time statistics tracker for the novel coronavirus (2019-nCoV), with global reports and individual country data.'
-            }
+                    'Real-time statistics tracker for the novel coronavirus (2019-nCoV), with global reports and individual country data.',
+            },
         ],
-        liink: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+        liink: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -34,7 +34,7 @@ export default {
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
     plugins: [
         { src: '~/plugins/vue-good-table', ssr: false },
-        '~/plugins/helpers'
+        '~/plugins/helpers',
     ],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
@@ -45,14 +45,14 @@ export default {
         // https://go.nuxtjs.dev/typescript
         '@nuxt/typescript-build',
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/fontawesome'
+        '@nuxtjs/fontawesome',
     ],
 
     fontawesome: {
         icons: {
             solid: true,
-            brands: true
-        }
+            brands: true,
+        },
     },
 
     // Modules: https://go.nuxtjs.dev/config-modules
@@ -60,7 +60,7 @@ export default {
         // https://go.nuxtjs.dev/axios
         '@nuxtjs/axios',
         // https://go.nuxtjs.dev/pwa
-        '@nuxtjs/pwa'
+        '@nuxtjs/pwa',
     ],
 
     // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -74,13 +74,13 @@ export default {
             lang: 'en',
             description:
                 'Statistics tracker for the novel coronavirus (2019-nCoV)',
-            theme_color: '#5B21B6'
-        }
+            theme_color: '#5B21B6',
+        },
     },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
     server: {
-        host: '0.0.0.0'
-    }
+        host: '0.0.0.0',
+    },
 };

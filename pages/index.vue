@@ -1,22 +1,20 @@
 <template>
-    <main class="my-auto" v-if="!loading">
-        <p class="mt-3 italic">
-            Data automatically updates every 5 minutes.
-        </p>
+    <main v-if="!loading" class="my-auto">
+        <p class="mt-3 italic">Data automatically updates every 5 minutes.</p>
         <p class="mt-3">Last Updated: {{ formatDate(date) }}</p>
         <h2 class="text-3xl m-5 font-bold">Daily Global Report</h2>
         <StatsReport :stats="stats" :daily="true" />
         <h2 class="text-3xl m-5 font-bold">All-Time Global Report</h2>
         <StatsReport :stats="stats" :daily="false" />
     </main>
-    <main class="flex justify-center items-center flex-grow" v-else>
+    <main v-else class="flex justify-center items-center flex-grow">
         <LoadingCircle />
     </main>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import * as client from '~/API/client';
+import summary from '~/API/client';
 
 export default Vue.extend({
     name: 'Index',
@@ -24,18 +22,18 @@ export default Vue.extend({
         return {
             loading: true,
             date: '',
-            stats: {}
+            stats: {},
         };
     },
     async fetch() {
         this.loading = true;
-        const data = await client.summary();
+        const data = await summary();
         this.date = data.Date;
         this.stats = data.Global;
         this.loading = false;
     },
-    async created() {
+    created() {
         setInterval(this.$fetch, 300000);
-    }
+    },
 });
 </script>

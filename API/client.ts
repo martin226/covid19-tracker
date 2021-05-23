@@ -1,7 +1,7 @@
-import { Summary } from './interfaces';
 import axios from 'axios';
+import { Summary } from './interfaces';
 
-export const summary = async (): Promise<Summary> => {
+export default async (): Promise<Summary> => {
     const res = await axios.get('https://api.covid19api.com/summary');
     return res.data;
 };
