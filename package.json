@@ -8,7 +8,7 @@
         "start": "nuxt start",
         "generate": "nuxt generate",
         "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-        "generate:deployment": "yarn generate && rm dist/README.md && cp CNAME dist/CNAME && yarn deploy",
+        "generate:deployment": "yarn generate && rm dist/README.md && yarn deploy",
         "lint": "eslint --ext \".js,.vue,.ts\" --ignore-path .gitignore ."
     },
     "dependencies": {
