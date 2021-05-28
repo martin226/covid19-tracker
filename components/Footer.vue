@@ -39,7 +39,7 @@
                 >
                 <br />
                 <a
-                    href="https://github.com/martin-sit"
+                    href="https://covid19api.com"
                     class="text-lg leading-loose underline"
                     target="_blank"
                     >API</a
