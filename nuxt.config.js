@@ -25,7 +25,13 @@ export default {
                     'Real-time statistics tracker for the novel coronavirus (2019-nCoV), with global reports and individual country data.',
             },
         ],
-        liink: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: 'favicon.ico?v2',
+            },
+        ],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
@@ -74,7 +80,7 @@ export default {
             lang: 'en',
             description:
                 'Statistics tracker for the novel coronavirus (2019-nCoV)',
-            theme_color: '#5B21B6',
+            theme_color: '#536dfe',
         },
     },
 
