@@ -19,9 +19,9 @@
             <LoadingCircle />
         </main>
     </div>
-    <div v-else>
+    <div v-else class="min-h-screen flex flex-col">
         <Navbar />
-        <div class="text-center">
+        <div class="text-center h-full m-auto align-middle">
             <font-awesome-icon
                 class="text-9xl text-blue-800 my-10"
                 :icon="['fas', 'exclamation-triangle']"
