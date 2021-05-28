@@ -2,7 +2,7 @@
 
 COVID-19 tracker PWA built using NuxtJS and Tailwind.
 
-![COVID-19 Tracker Screenshot](https://i.imgur.com/Um41VRw.png)
+![COVID-19 Tracker Screenshot](https://i.imgur.com/4VMzQV9.png)
 
 ## Live Demo
 
