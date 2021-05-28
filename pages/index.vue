@@ -1,15 +1,30 @@
 <template>
-    <main v-if="!loading" class="my-auto">
-        <p class="mt-3 italic">Data automatically updates every 5 minutes.</p>
-        <p class="mt-3">Last Updated: {{ formatDate(date) }}</p>
-        <h2 class="text-3xl m-5 font-bold">Daily Global Report</h2>
-        <StatsReport :stats="stats" :daily="true" />
-        <h2 class="text-3xl m-5 font-bold">All-Time Global Report</h2>
-        <StatsReport :stats="stats" :daily="false" />
-    </main>
-    <main v-else class="flex justify-center items-center flex-grow">
-        <LoadingCircle />
-    </main>
+    <div v-if="$nuxt.isOnline">
+        <main v-if="!loading">
+            <div class="min-h-screen flex flex-col">
+                <Navbar />
+                <Header />
+            </div>
+        </main>
+        <main
+            v-else
+            class="min-h-screen flex justify-center items-center flex-grow"
+        >
+            <LoadingCircle />
+        </main>
+    </div>
+    <div v-else>
+        <Navbar />
+        <div class="text-center">
+            <font-awesome-icon
+                class="text-9xl text-blue-800 my-10"
+                :icon="['fas', 'exclamation-triangle']"
+            />
+            <p class="text-2xl">
+                An error occurred while connecting to the internet.
+            </p>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">

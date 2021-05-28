@@ -1,46 +1,37 @@
 <template>
-    <nav
-        class="
-            text-white
-            flex flex-col
-            text-center
-            sm:flex-row
-            sm:text-left
-            sm:justify-between
-            py-4
-            px-6
-            bg-purple-800
-            shadow
-            sm:items-baseline
-            w-full
-        "
-    >
-        <div class="mb-2 sm:mb-0">
-            <NuxtLink to="/" class="font-bold text-3xl md:text-4xl">
-                <font-awesome-icon :icon="['fas', 'shield-virus']" /> COVID-19
-                Tracker</NuxtLink
+    <div class="m-auto px-10 md:w-10/12 lg:w-8/12 xl:w-6/12">
+        <h1 class="text-center text-6xl 2xl:text-7xl font-extrabold">
+            COVID-19 <span class="text-blue-800">statistics</span> when you need
+            them
+        </h1>
+        <p class="px-10 py-8 text-xl leading-loose my-2">
+            View the most important COVID-19 statistics all in one place. See
+            daily and all-time statistics for cases, recoveries and deaths, as
+            well as statistics for individual countries.
+            <a
+                class="text-blue-700"
+                href="http://github.com/martin-sit/covid19-tracker"
+                target="_blank"
+                >Open source</a
             >
-            <p class="text-center">
-                Built with
-                <a href="https://covid19api.com" class="text-purple-300"
-                    >https://covid19api.com/</a
-                >
-            </p>
-        </div>
-        <hr class="my-3 visible sm:invisible" />
-        <div class="pr-4">
-            <NuxtLink
-                to="/countries"
+            on Github.
+        </p>
+        <div class="text-center">
+            <button
                 class="
-                    text-lg
-                    no-underline
-                    text-white
-                    hover:text-purple-300
-                    ml-2
+                    h-12
+                    px-10
+                    text-lg text-blue-100
+                    transition-colors
+                    duration-150
+                    bg-blue-700
+                    rounded-lg
+                    focus:shadow-outline
+                    hover:bg-blue-800
                 "
-                ><font-awesome-icon :icon="['fas', 'compass']" />
-                Countries</NuxtLink
             >
+                View Statistics
+            </button>
         </div>
-    </nav>
+    </div>
 </template>
