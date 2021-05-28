@@ -50,7 +50,6 @@ export default Vue.extend({
         };
     },
     async fetch() {
-        this.loading = true;
         const data = await summary();
         this.date = data.Date;
         this.stats = data.Global;
@@ -58,6 +57,7 @@ export default Vue.extend({
         this.loading = false;
     },
     created() {
+        this.loading = true;
         setInterval(this.$fetch, 300000);
     },
     mounted() {
