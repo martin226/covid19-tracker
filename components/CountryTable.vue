@@ -3,6 +3,7 @@
         class="px-5 md:px-10 lg:px-16 mb-5"
         :columns="columns"
         :rows="countries"
+        theme="polar-bear"
         :search-options="{
             enabled: true,
             placeholder: 'Search for a country',

@@ -8,6 +8,7 @@
             <div>
                 <StatsDaily ref="dailyStats" :stats="stats" />
                 <StatsAllTime :stats="stats" />
+                <StatsCountries :countries="countries" />
             </div>
         </main>
         <main
@@ -34,6 +35,7 @@
 <script lang="ts">
 import Vue from 'vue';
 import summary from '~/API/client';
+import { Country } from '~/API/interfaces';
 
 export default Vue.extend({
     name: 'Index',
@@ -42,6 +44,7 @@ export default Vue.extend({
             loading: true,
             date: '',
             stats: {},
+            countries: [] as Country[],
         };
     },
     async fetch() {
@@ -49,6 +52,7 @@ export default Vue.extend({
         const data = await summary();
         this.date = data.Date;
         this.stats = data.Global;
+        this.countries = data.Countries;
         this.loading = false;
     },
     created() {
