@@ -18,6 +18,7 @@
         </p>
         <div class="text-center">
             <button
+                ref="viewStats"
                 class="
                     h-12
                     px-10

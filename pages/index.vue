@@ -3,7 +3,10 @@
         <main v-if="!loading">
             <div class="min-h-screen flex flex-col">
                 <Navbar />
-                <Header />
+                <Header ref="header" />
+            </div>
+            <div>
+                <StatsDaily ref="dailyStats" :stats="stats" />
             </div>
         </main>
         <main
@@ -49,6 +52,20 @@ export default Vue.extend({
     },
     created() {
         setInterval(this.$fetch, 300000);
+    },
+    mounted() {
+        const interval = setInterval(() => {
+            if (this.$refs.header && this.$refs.dailyStats) {
+                clearInterval(interval);
+                const viewStats = (this.$refs.header as Vue).$refs
+                    .viewStats as HTMLElement;
+                const dailyStats = (this.$refs.dailyStats as Vue)
+                    .$el as HTMLElement;
+                viewStats.addEventListener('click', () => {
+                    dailyStats.scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        }, 50);
     },
 });
 </script>
