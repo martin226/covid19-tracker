@@ -9,6 +9,7 @@
                 <StatsDaily ref="dailyStats" :stats="stats" />
                 <StatsAllTime :stats="stats" />
                 <StatsCountries :countries="countries" />
+                <Footer />
             </div>
         </main>
         <main
@@ -29,6 +30,7 @@
                 An error occurred while connecting to the internet.
             </p>
         </div>
+        <Footer />
     </div>
 </template>
 
