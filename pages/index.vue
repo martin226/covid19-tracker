@@ -7,6 +7,7 @@
             </div>
             <div>
                 <StatsDaily ref="dailyStats" :stats="stats" />
+                <StatsAllTime :stats="stats" />
             </div>
         </main>
         <main
