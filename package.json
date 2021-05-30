@@ -16,6 +16,7 @@
         "axios": "^0.21.1",
         "core-js": "^3.11.3",
         "nuxt": "^2.15.3",
+        "smoothscroll-polyfill": "^0.4.4",
         "vue-good-table": "^2.21.10"
     },
     "devDependencies": {
@@ -27,6 +28,7 @@
         "@nuxtjs/eslint-module": "^3.0.2",
         "@nuxtjs/fontawesome": "^1.1.2",
         "@nuxtjs/tailwindcss": "^4.1.0",
+        "@types/smoothscroll-polyfill": "^0.3.1",
         "autoprefixer": "^9",
         "babel-eslint": "^10.1.0",
         "eslint": "^7.2.0",
