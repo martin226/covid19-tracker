@@ -15,7 +15,7 @@
         "@nuxtjs/pwa": "^3.3.5",
         "axios": "^0.21.1",
         "core-js": "^3.11.3",
-        "nuxt": "^2.15.3",
+        "nuxt": "^2.15.6",
         "vue-good-table": "^2.21.10"
     },
     "devDependencies": {
