@@ -18,7 +18,6 @@
         </p>
         <div class="text-center">
             <button
-                ref="viewStats"
                 class="
                     h-12
                     px-10
@@ -30,9 +29,24 @@
                     focus:shadow-outline
                     hover:bg-blue-800
                 "
+                @click="scrollDown()"
             >
                 View Statistics
             </button>
         </div>
     </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+    methods: {
+        scrollDown() {
+            (this.$parent.$refs.dailyStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+    },
+});
+</script>
