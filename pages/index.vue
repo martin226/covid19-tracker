@@ -7,8 +7,8 @@
             </div>
             <div>
                 <StatsDaily ref="dailyStats" :stats="stats" />
-                <StatsAllTime :stats="stats" />
-                <StatsCountries :countries="countries" />
+                <StatsAllTime ref="allTimeStats" :stats="stats" />
+                <StatsCountries ref="countryStats" :countries="countries" />
                 <Footer />
             </div>
         </main>

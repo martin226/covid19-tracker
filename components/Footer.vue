@@ -20,8 +20,41 @@
             </p>
         </div>
         <div class="lg:ml-24 grid grid-cols-1 lg:grid-cols-2 gap-x-24">
-            <div></div>
-            <div>
+            <div class="py-3">
+                <p
+                    class="
+                        text-gray-600
+                        font-medium
+                        pb-2
+                        text-lg
+                        leading-loose
+                        dark:text-gray-400
+                    "
+                >
+                    COVID-19 TRACKER
+                </p>
+                <a
+                    class="cursor-pointer text-lg leading-loose underline"
+                    target="_blank"
+                    @click="scrollToDaily()"
+                    >Daily Stats</a
+                >
+                <br />
+                <a
+                    class="cursor-pointer text-lg leading-loose underline"
+                    target="_blank"
+                    @click="scrollToAllTime()"
+                    >All-Time Stats</a
+                >
+                <br />
+                <a
+                    class="cursor-pointer text-lg leading-loose underline"
+                    target="_blank"
+                    @click="scrollToCountry()"
+                    >Country Stats</a
+                >
+            </div>
+            <div class="py-3">
                 <p
                     class="
                         text-gray-600
@@ -58,3 +91,27 @@
         </div>
     </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+    methods: {
+        scrollToDaily() {
+            (this.$parent.$refs.dailyStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+        scrollToAllTime() {
+            (this.$parent.$refs.allTimeStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+        scrollToCountry() {
+            (this.$parent.$refs.countryStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+    },
+});
+</script>
