@@ -33,7 +33,6 @@
                 An error occurred while connecting to the internet.
             </p>
         </div>
-        <Footer />
     </div>
 </template>
 
