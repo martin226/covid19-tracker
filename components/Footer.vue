@@ -19,7 +19,7 @@
                 (2019-nCoV), with global reports and individual country data.
             </p>
         </div>
-        <div class="lg:ml-24 grid grid-cols-1 lg:grid-cols-2 gap-x-24">
+        <div class="lg:ml-24 grid grid-cols-2 gap-x-4 sm:gap-x-24">
             <div class="py-3">
                 <p
                     class="
