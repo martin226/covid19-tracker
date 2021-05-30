@@ -1,5 +1,5 @@
 <template>
-    <div v-if="$nuxt.isOnline">
+    <div v-if="$nuxt.isOnline" class="dark:bg-black dark:text-white">
         <main v-if="!loading">
             <div class="min-h-screen flex flex-col">
                 <Navbar />
@@ -19,7 +19,10 @@
             <LoadingCircle />
         </main>
     </div>
-    <div v-else class="min-h-screen flex flex-col">
+    <div
+        v-else
+        class="min-h-screen flex flex-col dark:bg-black dark:text-white"
+    >
         <Navbar />
         <div class="text-center h-full m-auto align-middle">
             <font-awesome-icon
@@ -61,6 +64,20 @@ export default Vue.extend({
         setInterval(this.$fetch, 300000);
     },
     mounted() {
+        if (!['dark', 'light'].includes(localStorage.theme)) {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                localStorage.theme = 'dark';
+            } else {
+                localStorage.theme = 'light';
+            }
+        }
+
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
         const interval = setInterval(() => {
             if (this.$refs.header && this.$refs.dailyStats) {
                 clearInterval(interval);

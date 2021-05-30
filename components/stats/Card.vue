@@ -5,6 +5,7 @@
             mx-auto
             relative
             bg-white
+            text-black
             py-6
             px-6
             rounded-3xl

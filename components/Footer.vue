@@ -10,6 +10,7 @@
             lg:grid-cols-2
             xl:gap-x-52
             2xl:gap-x-96
+            dark:bg-gray-800
         "
     >
         <div>
@@ -21,7 +22,16 @@
         <div class="lg:ml-24 grid grid-cols-1 lg:grid-cols-2 gap-x-24">
             <div></div>
             <div>
-                <p class="text-gray-600 font-medium pb-2 text-lg leading-loose">
+                <p
+                    class="
+                        text-gray-600
+                        font-medium
+                        pb-2
+                        text-lg
+                        leading-loose
+                        dark:text-gray-400
+                    "
+                >
                     LINKS
                 </p>
                 <a

@@ -8,6 +8,7 @@
             grid grid-cols-1
             lg:grid-cols-2
             gap-x-16
+            dark:bg-gray-900
         "
     >
         <div class="m-auto">

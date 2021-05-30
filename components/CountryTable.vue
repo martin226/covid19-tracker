@@ -1,18 +1,34 @@
 <template>
-    <vue-good-table
-        class="px-5 md:px-10 lg:px-16 mb-5"
-        :columns="columns"
-        :rows="countries"
-        theme="polar-bear"
-        :search-options="{
-            enabled: true,
-            placeholder: 'Search for a country',
-        }"
-        :pagination-options="{
-            enabled: true,
-            mode: 'pages',
-        }"
-    />
+    <div>
+        <vue-good-table
+            class="px-5 md:px-10 lg:px-16 mb-5 block dark:hidden"
+            :columns="columns"
+            :rows="countries"
+            theme="polar-bear"
+            :search-options="{
+                enabled: true,
+                placeholder: 'Search for a country',
+            }"
+            :pagination-options="{
+                enabled: true,
+                mode: 'pages',
+            }"
+        />
+        <vue-good-table
+            class="px-5 md:px-10 lg:px-16 mb-5 hidden dark:block"
+            :columns="columns"
+            :rows="countries"
+            theme="nocturnal"
+            :search-options="{
+                enabled: true,
+                placeholder: 'Search for a country',
+            }"
+            :pagination-options="{
+                enabled: true,
+                mode: 'pages',
+            }"
+        />
+    </div>
 </template>
 <script lang="ts">
 import Vue from 'vue';

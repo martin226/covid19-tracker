@@ -1,5 +1,5 @@
 <template>
-    <div class="m-auto px-6 md:w-10/12 lg:w-8/12 xl:w-6/12">
+    <div class="m-auto pb-10 px-6 md:w-10/12 lg:w-8/12 xl:w-6/12">
         <h1 class="text-center text-6xl 2xl:text-7xl font-extrabold">
             COVID-19 <span class="text-blue-800">statistics</span> when you need
             them
