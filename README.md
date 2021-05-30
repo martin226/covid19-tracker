@@ -25,7 +25,7 @@ $ yarn start
 $ yarn generate
 
 # generate static project and deploy to gh pages
-$ yarn generate:deployment
+$ yarn deploy
 ```
 
 ## Credits

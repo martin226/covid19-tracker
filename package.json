@@ -7,8 +7,7 @@
         "build": "nuxt build",
         "start": "nuxt start",
         "generate": "nuxt generate",
-        "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
-        "generate:deployment": "yarn generate && rm dist/README.md && yarn deploy",
+        "deploy": "nuxt generate && rimraf dist/README.md && push-dir --dir=dist --branch=gh-pages --cleanup",
         "lint": "eslint --ext \".js,.vue,.ts\" --ignore-path .gitignore ."
     },
     "dependencies": {
@@ -40,6 +39,7 @@
         "postcss": "^7",
         "prettier": "^2.3.0",
         "push-dir": "^0.4.1",
+        "rimraf": "^3.0.2",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat"
     }
 }
