@@ -36,21 +36,21 @@
                 <a
                     class="cursor-pointer text-lg leading-loose underline"
                     target="_blank"
-                    @click="scrollToDaily()"
+                    @click="$emit('scrollDaily')"
                     >Daily Stats</a
                 >
                 <br />
                 <a
                     class="cursor-pointer text-lg leading-loose underline"
                     target="_blank"
-                    @click="scrollToAllTime()"
+                    @click="$emit('scrollAllTime')"
                     >All-Time Stats</a
                 >
                 <br />
                 <a
                     class="cursor-pointer text-lg leading-loose underline"
                     target="_blank"
-                    @click="scrollToCountry()"
+                    @click="$emit('scrollCountry')"
                     >Country Stats</a
                 >
             </div>
@@ -91,27 +91,3 @@
         </div>
     </div>
 </template>
-
-<script lang="ts">
-import Vue from 'vue';
-
-export default Vue.extend({
-    methods: {
-        scrollToDaily() {
-            (this.$parent.$refs.dailyStats as Vue).$el.scrollIntoView({
-                behavior: 'smooth',
-            });
-        },
-        scrollToAllTime() {
-            (this.$parent.$refs.allTimeStats as Vue).$el.scrollIntoView({
-                behavior: 'smooth',
-            });
-        },
-        scrollToCountry() {
-            (this.$parent.$refs.countryStats as Vue).$el.scrollIntoView({
-                behavior: 'smooth',
-            });
-        },
-    },
-});
-</script>

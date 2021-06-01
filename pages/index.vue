@@ -3,13 +3,17 @@
         <main v-if="!loading">
             <div class="min-h-screen flex flex-col">
                 <Navbar />
-                <Header />
+                <Header @scrollDaily="scrollToDaily()" />
             </div>
             <div>
                 <StatsDaily ref="dailyStats" :stats="stats" />
                 <StatsAllTime ref="allTimeStats" :stats="stats" />
                 <StatsCountries ref="countryStats" :countries="countries" />
-                <Footer />
+                <Footer
+                    @scrollDaily="scrollToDaily()"
+                    @scrollAllTime="scrollToAllTime()"
+                    @scrollCountry="scrollToCountry()"
+                />
             </div>
         </main>
         <main
@@ -76,6 +80,23 @@ export default Vue.extend({
         } else {
             document.documentElement.classList.remove('dark');
         }
+    },
+    methods: {
+        scrollToDaily() {
+            (this.$refs.dailyStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+        scrollToAllTime() {
+            (this.$refs.allTimeStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
+        scrollToCountry() {
+            (this.$refs.countryStats as Vue).$el.scrollIntoView({
+                behavior: 'smooth',
+            });
+        },
     },
 });
 </script>
