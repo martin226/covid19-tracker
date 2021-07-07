@@ -28,7 +28,7 @@
         "@nuxtjs/eslint-config-typescript": "^6.0.0",
         "@nuxtjs/eslint-module": "^3.0.2",
         "@nuxtjs/fontawesome": "^1.1.2",
-        "@nuxtjs/tailwindcss": "^4.1.0",
+        "@nuxtjs/tailwindcss": "^4.2.1",
         "@types/smoothscroll-polyfill": "^0.3.1",
         "autoprefixer": "^9",
         "babel-eslint": "^10.1.0",
