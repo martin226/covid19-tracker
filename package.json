@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "@fortawesome/free-brands-svg-icons": "^5.15.3",
-        "@fortawesome/free-solid-svg-icons": "^5.15.3",
+        "@fortawesome/free-solid-svg-icons": "^5.15.4",
         "@nuxt/types": "^2.15.3",
         "@nuxt/typescript-build": "^2.1.0",
         "@nuxtjs/eslint-config-typescript": "^6.0.0",
