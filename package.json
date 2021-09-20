@@ -15,7 +15,7 @@
         "@nuxtjs/pwa": "^3.3.5",
         "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
         "axios": "^0.21.1",
-        "core-js": "^3.11.3",
+        "core-js": "^3.18.0",
         "nuxt": "^2.15.3",
         "smoothscroll-polyfill": "^0.4.4",
         "vue-good-table": "^2.21.10"
