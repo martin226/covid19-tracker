@@ -10,7 +10,7 @@
             well as statistics for individual countries.
             <a
                 class="text-blue-700"
-                href="http://github.com/martin-sit/covid19-tracker"
+                href="http://github.com/martin226/covid19-tracker"
                 target="_blank"
                 >Open source</a
             >
@@ -18,17 +18,7 @@
         </p>
         <div class="text-center">
             <button
-                class="
-                    h-12
-                    px-10
-                    text-lg text-blue-100
-                    transition-colors
-                    duration-150
-                    bg-blue-700
-                    rounded-lg
-                    focus:shadow-outline
-                    hover:bg-blue-800
-                "
+                class="h-12 px-10 text-lg text-blue-100 transition-colors duration-150 bg-blue-700 rounded-lg focus:shadow-outline hover:bg-blue-800"
                 @click="$emit('scrollDaily')"
             >
                 View Statistics

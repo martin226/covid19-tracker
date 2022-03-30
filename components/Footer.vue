@@ -1,17 +1,6 @@
 <template>
     <div
-        class="
-            bg-gray-100
-            py-20
-            px-5
-            md:px-24
-            xl:px-36
-            grid grid-cols-1
-            lg:grid-cols-2
-            xl:gap-x-52
-            2xl:gap-x-96
-            dark:bg-gray-800
-        "
+        class="bg-gray-100 py-20 px-5 md:px-24 xl:px-36 grid grid-cols-1 lg:grid-cols-2 xl:gap-x-52 2xl:gap-x-96 dark:bg-gray-800"
     >
         <div>
             <p class="py-8 text-xl leading-loose">
@@ -22,14 +11,7 @@
         <div class="lg:ml-24 grid grid-cols-2 gap-x-4 sm:gap-x-24">
             <div class="py-3">
                 <p
-                    class="
-                        text-gray-600
-                        font-medium
-                        pb-2
-                        text-lg
-                        leading-loose
-                        dark:text-gray-400
-                    "
+                    class="text-gray-600 font-medium pb-2 text-lg leading-loose dark:text-gray-400"
                 >
                     COVID-19 TRACKER
                 </p>
@@ -56,26 +38,19 @@
             </div>
             <div class="py-3">
                 <p
-                    class="
-                        text-gray-600
-                        font-medium
-                        pb-2
-                        text-lg
-                        leading-loose
-                        dark:text-gray-400
-                    "
+                    class="text-gray-600 font-medium pb-2 text-lg leading-loose dark:text-gray-400"
                 >
                     LINKS
                 </p>
                 <a
-                    href="https://github.com/martin-sit/covid19-tracker"
+                    href="https://github.com/martin226/covid19-tracker"
                     class="text-lg leading-loose underline"
                     target="_blank"
                     >Source Code</a
                 >
                 <br />
                 <a
-                    href="https://github.com/martin-sit"
+                    href="https://github.com/martin226"
                     class="text-lg leading-loose underline"
                     target="_blank"
                     >Github</a

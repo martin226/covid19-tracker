@@ -6,7 +6,7 @@ COVID-19 tracker PWA built using NuxtJS and Tailwind.
 
 ## Live Demo
 
-<https://martin-sit.github.io/covid19-tracker/>
+<https://martin226.github.io/covid19-tracker/>
 
 ## Build Setup
 
@@ -35,4 +35,4 @@ $ yarn deploy
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
-Copyright (c) 2021 Martin Sit
+Copyright (c) 2021-present Martin Sit
