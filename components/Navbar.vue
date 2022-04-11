@@ -1,16 +1,6 @@
 <template>
     <nav
-        class="
-            flex flex-col
-            text-center
-            mx-auto
-            sm:flex-row
-            sm:justify-between
-            py-8
-            sm:px-6
-            sm:items-baseline
-            w-10/12
-        "
+        class="flex flex-col text-center mx-auto sm:flex-row sm:justify-between py-8 sm:px-6 sm:items-baseline w-10/12"
     >
         <div>
             <NuxtLink to="/" class="font-bold text-3xl md:text-4xl">
@@ -28,30 +18,11 @@
             />
             <label
                 for="dark-mode-toggle"
-                class="
-                    w-full
-                    h-full
-                    bg-gray-800
-                    dark:bg-white
-                    rounded-full
-                    p-1
-                    flex
-                    justify-between
-                    cursor-pointer
-                "
+                class="w-full h-full bg-gray-800 dark:bg-white rounded-full p-1 flex justify-between cursor-pointer"
             >
                 <span class="inline dark:hidden">🌞</span>
                 <span
-                    class="
-                        w-6
-                        h-6
-                        rounded-full
-                        bg-white
-                        dark:bg-gray-800
-                        block
-                        float-right
-                        dark:float-left
-                    "
+                    class="w-6 h-6 rounded-full bg-white dark:bg-gray-800 block float-right dark:float-left"
                 ></span>
                 <span class="hidden dark:inline">🌛</span>
             </label>
